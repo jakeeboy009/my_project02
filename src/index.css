@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* 카페 느낌의 따뜻한 폰트 및 기본 스타일 설정 */
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #faf6f0;
+  color: #3e2723;
+  margin: 0;
+  padding: 0;
+}
+
+/* 입력칸 기본 스타일 및 포커스 스타일 */
+.cafe-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d7ccc8;
+  background-color: #ffffff;
+  color: #3e2723;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cafe-input:focus {
+  outline: none;
+  border-color: #6b4226;
+  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.15);
+}
+
+/* 주문 / 추천하기 버튼 스타일 */
+.cafe-button {
+  background-color: #6b4226;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cafe-button:hover {
+  background-color: #7d4e2d;
+}
+
+.cafe-button:active {
+  transform: scale(0.99);
+}
+
+/* 다시 작성 버튼 스타일 */
+.cafe-secondary-button {
+  background-color: #efebe9;
+  color: #5d4037;
+  border: 1px solid #d7ccc8;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cafe-secondary-button:hover {
+  background-color: #e0d9d5;
+}
+
+/* 예상 금액 스타일 */
+.expected-price {
+  font-size: 24px;
+  color: #6b4226;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 주문 확인 / 추천 메시지 스타일 */
+.confirmation-box {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 16px 20px;
+  line-height: 1.6;
+}
